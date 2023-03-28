@@ -7,19 +7,19 @@ export class User {
   userSno: number;
 
   @Column({ length: 40, unique: true })
-  userId: String;
+  userId: string;
 
   @Column({ length: 256, nullable: false })
   password: string;
 
   @Column({ length: 40 })
-  name: String;
+  name: string;
 
   @Column({ length: 15 })
-  phone: String;
+  phone: string;
 
   @Column({ length: 40, unique: true })
-  email: String;
+  email: string;
 
   @CreateDateColumn()
   createdAt: Date;
