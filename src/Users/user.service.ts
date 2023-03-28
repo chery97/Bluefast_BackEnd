@@ -17,9 +17,12 @@ export class UserService {
   // 유저 생성
   async createUser(userData: CreateUserDto): Promise<User> {
     const { userId, password, name, phone, email } = userData;
+
+    // userId, email 존재여부
     const isUserIdExist = await this.userRepository.exist({ where: { userId: userId } });
     const isEmailExist = await this.userRepository.exist({ where: { email: email } });
 
+    // Exception 처리
     if (isUserIdExist) {
       throw new UnauthorizedException('해당하는 아이디는 이미 존재합니다.');
     }
