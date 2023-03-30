@@ -3,7 +3,7 @@ import { UserService } from "./user.service";
 import { User } from './entity/user.entity';
 import { ApiOperation, ApiTags } from "@nestjs/swagger";
 import { AuthService } from "../auth/auth.service";
-import { UserRepository } from "../repository/user.repository";
+import { UserRepository } from "../repository/user/user.repository";
 
 @ApiTags('User')
 @Controller('/user')

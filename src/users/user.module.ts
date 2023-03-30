@@ -6,7 +6,7 @@ import { UserService } from "./user.service";
 import { User } from './entity/user.entity';
 import { AuthService } from "../auth/auth.service";
 import { AuthModule } from "../auth/auth.module";
-import { UserRepository } from "../repository/user.repository";
+import { UserRepository } from "../repository/user/user.repository";
 import { JwtService } from "@nestjs/jwt";
 
 @Module({

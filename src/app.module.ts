@@ -7,8 +7,8 @@ import { ConfigModule } from '@nestjs/config';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { UserModule } from "./Users/user.module";
-import { User } from "./Users/entity/user.entity";
+import { UserModule } from "./users/user.module";
+import { User } from "./users/entity/user.entity";
 import { AuthModule } from './auth/auth.module';
 import Joi from 'joi';
 

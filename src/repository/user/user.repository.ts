@@ -1,7 +1,7 @@
 import { EntityRepository, Repository } from "typeorm";
-import { User } from '../Users/entity/user.entity';
+import { User } from '../../users/entity/user.entity';
 import { ForbiddenException } from "@nestjs/common";
-import CreateUserDto from "../Users/dto/createUser.dto";
+import CreateUserDto from "../../users/dto/createUser.dto";
 
 @EntityRepository(User)
 export class UserRepository extends Repository<User> {가
